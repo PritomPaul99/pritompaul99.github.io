@@ -1,0 +1,52 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+:root {
+    --main-color: rgb(12, 185, 238);
+}
+
+
+.body{
+    background-color: aqua;
+}
+
+.heading {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+img{
+    height: 5cm;
+    width: 5cm;
+}
+
+.pic{
+    height: 6cm;
+    width: 6cm;
+    border-radius: 100%;
+}
+
+.icn{
+    height: 4mm;
+    width: 4mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+}
+
+.box{
+    text-align: center;
+    border: 3mm;
+    border-radius: 6px;
+
+}
