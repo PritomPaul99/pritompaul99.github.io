@@ -53,6 +53,7 @@
             <button type="button" onclick="sumA(), sumB(), rate()" class="btn">SUM</button>
         </div>
     </div>
+    <p></p>
 
 
     <script>
@@ -76,8 +77,9 @@
         }
 
         function rate() {
-            var resultA = document.getElementById("resultA").value;
-            var resultB = document.getElementById("resultB").value;
+            var resultA = document.getElementById("resultA").textContent;
+            var resultB = document.getElementById("resultB").textContent;
+
 
             var M_rate = parseInt(resultA) / parseInt(resultB);
             document.getElementById("M_rate").innerHTML = M_rate;
@@ -91,7 +93,7 @@
             <tr>
                 <th>Meal Rate</th>
                 <td>
-                    <p id="M_rate"></p>
+                    <p id="M_rate" class="EmptyBox"></p>
                 </td>
             </tr>
         </table>

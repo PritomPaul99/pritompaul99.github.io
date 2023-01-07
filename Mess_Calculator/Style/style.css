@@ -31,6 +31,7 @@ td {
 .btnContain {
     text-align: center;
     padding-top: 3px;
+    height: fit-content;
 }
 
 .btn {
@@ -60,4 +61,7 @@ td {
 .centre .h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+}
+.EmptyBox{
+    min-width: 2cm;
 }
