@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Mess Management by Pritom</title>
+</head>
+
+<body>
+    <h1 class="heading">Mess Management System</h1>
+    <div class="centre">
+        <H2 class="h2">Enter meal numbers and total bazar costs</H2>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Bazar Cost(Taka)</th>
+                <th>Meal No.</th>
+            </tr>
+            <tr>
+                <td>Pritom</td>
+                <td><input type="number" id="priCost" placeholder="Enter Total Cost"></td>
+                <td><input type="number" id="priMeals" placeholder="Enter Total Meals"></td>
+            </tr>
+            <tr>
+                <td>Danesh</td>
+                <td><input type="number" id="danCost" placeholder="Enter Total Cost"></td>
+                <td><input type="number" id="danMeals" placeholder="Enter Total Meals"></td>
+            </tr>
+            <tr>
+                <td>Kibriya</td>
+                <td><input type="number" id="kibCost" placeholder="Enter Total Cost"></td>
+                <td><input type="number" id="kibMeals" placeholder="Enter Total Meals"></td>
+            </tr>
+            <tr>
+                <td>Muhit</td>
+                <td><input type="number" id="muhCost" placeholder="Enter Total Cost"></td>
+                <td><input type="number" id="muhMeals" placeholder="Enter Total Meals"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><b>
+                        <p id="resultA"></p>
+                    </b></td>
+                <td><b>
+                        <p id="resultB"></p>
+                    </b></td>
+            </tr>
+        </table>
+        <div class="btnContain">
+            <button type="button" onclick="sumA(), sumB(), rate()" class="btn">SUM</button>
+        </div>
+    </div>
+    <p></p>
+
+
+    <script>
+        function sumA() {
+            var priCost = document.getElementById("priCost").value;
+            var danCost = document.getElementById("danCost").value;
+            var kibCost = document.getElementById("kibCost").value;
+            var muhCost = document.getElementById("muhCost").value;
+
+            var resultA = parseInt(priCost) + parseInt(danCost) + parseInt(kibCost) + parseInt(muhCost);
+            document.getElementById("resultA").innerHTML = resultA;
+        }
+        function sumB() {
+            var priMeals = document.getElementById("priMeals").value;
+            var danMeals = document.getElementById("danMeals").value;
+            var kibMeals = document.getElementById("kibMeals").value;
+            var muhMeals = document.getElementById("muhMeals").value;
+
+            var resultB = parseInt(priMeals) + parseInt(danMeals) + parseInt(kibMeals) + parseInt(muhMeals);
+            document.getElementById("resultB").innerHTML = resultB;
+        }
+
+        function rate() {
+            var resultA = document.getElementById("resultA").textContent;
+            var resultB = document.getElementById("resultB").textContent;
+
+
+            var M_rate = parseInt(resultA) / parseInt(resultB);
+            document.getElementById("M_rate").innerHTML = M_rate;
+
+        }
+
+        function pri() {
+
+        }
+    </script>
+
+
+    <div class="centre">
+        <table class="table">
+            <tr>
+                <th>Meal Rate</th>
+                <td>
+                    <p id="M_rate" class="EmptyBox"></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
