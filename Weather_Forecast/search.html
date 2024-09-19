@@ -1,29 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assects/icons/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>City Search</title>
-</head>
-<body>
-    <div class="search-container">
-        <h1>Search for a City</h1>
-        <form id="search-form">
-            <input type="text" id="city-input" placeholder="Enter city name" required />
-            <button type="submit">Search</button>
-        </form>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/search.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="window">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+          </li>
+          <li>
+            <a class="active" href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <h3>Search For City</h3>
+
+      <div class="search">
+        <div class="search-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <input class="searchinput" type="text" placeholder="search..." />
+      </div>
+
+      <div class="message">
+        <p>You have the option to search by city names.</p>
+      </div>
+
+      <div class="error-message">
+        <p>
+          One of the specified locations (city, state, or country) was not
+          found. Please try again
+        </p>
+      </div>
+
+      <div class="return">
+        <div class="box">
+          <div class="weather-box">
+            <div class="name">
+              <div class="city-name">Sylhet</div>
+              <div class="weather-temp">20°</div>
+            </div>
+            <div class="weather-icon">
+              <img class="weather-img" src="img/haze.png" alt="" />
+            </div>
+          </div>
+
+          <div class="weather-desc">
+            <div class="desc-box">
+              <div class="desc-icon"><i class="fa-solid fa-wind"></i></div>
+              <div class="desc-name">Wind</div>
+              <div class="desc-info wind">15 m/s</div>
+            </div>
+
+            <div class="desc-box">
+              <div class="desc-icon">
+                <i class="fa-solid fa-temperature-full"></i>
+              </div>
+              <div class="desc-name">Pressure</div>
+              <div class="desc-info pressure">15 mbar</div>
+            </div>
+
+            <div class="desc-box">
+              <div class="desc-icon"><i class="fa-solid fa-droplet"></i></div>
+              <div class="desc-name">Humidity</div>
+              <div class="desc-info humidity">50%</div>
+            </div>
+          </div>
+
+          <div class="weather-desc">
+            <div class="desc-box">
+              <div class="desc-icon"><i class="fa-solid fa-sun"></i></div>
+              <div class="desc-name">Sun Rise</div>
+              <div class="desc-info sunrise">12:00:00</div>
+            </div>
+
+            <div class="desc-box">
+              <div class="desc-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+              <div class="desc-name">Sun Set</div>
+              <div class="desc-info sunset">12:00:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script>
-        document.getElementById('search-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevents the default form submission
-            const cityName = document.getElementById('city-input').value;
-            if (cityName) {
-                window.location.href = `weather.html?city=${encodeURIComponent(cityName)}`;
-            }
-        });
-    </script>
-</body>
+    <script src="scripts/search.js"></script>
+  </body>
 </html>

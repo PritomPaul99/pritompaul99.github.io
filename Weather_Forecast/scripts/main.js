@@ -39,7 +39,6 @@ navigator.geolocation.getCurrentPosition(
       feelsLike.innerHTML = userdata.current.feelslike_c + "° C";
       wind_speed.innerHTML = userdata.current.wind_kph;
       wind_gust.innerHTML = userdata.current.gust_kph;
-      //   air_quality.innerHTML = userdata.current.air_quality["us-epa-index"];
       let air_quality_index = userdata.current.air_quality["us-epa-index"];
       if (air_quality_index == 1) {
         air_quality.innerHTML = "Good";
@@ -64,18 +63,17 @@ navigator.geolocation.getCurrentPosition(
         if (isCelsius) {
           currentTemp.innerHTML = Math.round(userdata.current.temp_f) + "° F";
           feelsLike.innerHTML = userdata.current.feelslike_f + "° F";
-
           isCelsius = false;
         } else {
           currentTemp.innerHTML = Math.round(userdata.current.temp_c) + "° C";
           feelsLike.innerHTML = userdata.current.feelslike_c + "° C";
-
           isCelsius = true;
         }
       });
 
-      //   Icon setting
-      // Function to set the weather icons
+      // console.log("Weather Message: ", userdata.current.condition.text);
+      
+
       function setWeatherIcons(isDay, weatherMessage) {
         if (isDay == 1) {
           if (weatherMessage === "Sunny") {
@@ -101,6 +99,8 @@ navigator.geolocation.getCurrentPosition(
           if (weatherMessage === "Clear") {
             weatherImg.src = "assects/icons/night/clear_night.png";
             weatherImgs.src = "assects/icons/night/clear_night.png";
+            console.log("Clear message");
+            
           } else if (weatherMessage === "Partly Cloudy") {
             weatherImg.src = "assects/icons/night/partly-cloudy-night.png";
             weatherImgs.src = "assects/icons/night/partly-cloudy-night.png";
@@ -124,7 +124,6 @@ navigator.geolocation.getCurrentPosition(
       var Fdata = await forecast_map.json();
 
       function addForecastItem(day, isDay, weatherMessage, tempMin, tempMax) {
-        // Use the correct class name to target the container
         const forecastBox = document.querySelector(".forecast-box-inside");
 
         const forecastItem = document.createElement("div");
@@ -140,9 +139,8 @@ navigator.geolocation.getCurrentPosition(
         const img = document.createElement("img");
         img.classList.add("weather-icons");
 
-        // Set the weather icon dynamically
         setWeatherIcons(isDay, weatherMessage);
-        img.src = weatherImg.src; // Get the current weather image source
+        img.src = weatherImg.src;
         img.alt = weatherMessage;
         weatherIcon.appendChild(img);
 
@@ -168,7 +166,7 @@ navigator.geolocation.getCurrentPosition(
         let weatherMessage = forecastDay.day.condition.text;
         let tempMin = Math.round(forecastDay.day.mintemp_c);
         let tempMax = Math.round(forecastDay.day.maxtemp_c);
-        let isDay = forecastDay.is_day; // Use this to determine day or night icons
+        let isDay = forecastDay.is_day;
 
         addForecastItem(day, isDay, weatherMessage, tempMin, tempMax);
       });
