@@ -1,0 +1,67 @@
+:root {
+    --bg_color: #000
+}
+
+body {
+    background-color: darkgray;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+.table {
+    text-align: center;
+    width: 40%;
+}
+
+/* .btn {
+    display: inline-block;
+    background: #000000;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin: auto;
+} */
+
+.btnContain {
+    text-align: center;
+    padding-top: 3px;
+    height: fit-content;
+}
+
+.btn {
+    font-size: 25px;
+}
+
+.centre {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.centre .table {
+    margin: auto;
+    width: 60%;
+    /* border: 3px solid #73AD21; */
+    padding: 10px;
+}
+
+.centre .h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.EmptyBox{
+    min-width: 2cm;
+}

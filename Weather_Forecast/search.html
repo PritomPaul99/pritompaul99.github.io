@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assects/icons/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>City Search</title>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Search for a City</h1>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter city name" required />
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            const cityName = document.getElementById('city-input').value;
+            if (cityName) {
+                window.location.href = `weather.html?city=${encodeURIComponent(cityName)}`;
+            }
+        });
+    </script>
+</body>
+</html>

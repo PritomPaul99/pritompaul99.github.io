@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assects/icons/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Weather Forecast</title>
+  </head>
+
+  <body>
+    <div class="window">
+      <!-- main section -->
+      <div id="screen">
+        <!-- city name -->
+        <div class="city-name">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h1 id="city-name">Sylhet</h1>
+        </div>
+
+        <!-- weather icon -->
+        <div class="weather-icon-css">
+          <img
+            class="weather-icon"
+            id="weather-icon1"
+            src="assects/icons/day/sunny.png"
+          />
+        </div>
+        <!-- weather details -->
+        <div class="weather-description">
+          <div class="show-metric" id="temp">23°</div>
+          <div class="weather-details">
+            <div class="weather-main" id="weather-main">Sunny</div>
+            <div class="details">
+              <div class="show-humidity">
+                Humidity: <span id="humidity">50</span>%
+              </div>
+              <div class="show-feels-like">
+                Feels like: <span id="feels-like">60</span>°
+              </div>
+            </div>
+          </div>
+
+          <!-- additional weather details -->
+          <div class="additional-weather-details">
+            <div class="weather-field">
+              Wind Speed: <span id="wind-speed">15</span> km/h
+            </div>
+            <div class="weather-field">
+              Wind Gust: <span id="wind-gust">20</span> km/h
+            </div>
+            <div class="weather-field">
+              Air Quality: <span id="air-quality">Good</span>
+            </div>
+            <div class="weather-field">
+              Pressure: <span id="pressure">1015</span> hPa
+            </div>
+            <div class="weather-field">
+              Visibility: <span id="visibility">10</span> km
+            </div>
+            <div class="weather-field">
+              UV Index: <span id="uv-index">5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Today-forecast -->
+      <div class="forcasts-box">
+        <div class="today-forecast">
+          <h4>TODAY</h4>
+          <div class="weather-icon-today">
+            <img class="weather-icons" src="img/sun.png" />
+          </div>
+          <div class="temp-today">
+            <span id="temp-today1">50°</span>
+          </div>
+          <div class="weather-main-today" id="weather-main-today">Sunny</div>
+        </div>
+
+        <!-- 6-day Forecast -->
+        <div class="forecast">
+          <h5>Next 3-Days Forecast</h5>
+          <div class="forecast-box-inside"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar outside of the window -->
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="index.html"
+              ><i class="fa-solid fa-location-arrow"></i
+            ></a>
+          </li>
+          <li>
+            <a href="search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li>
+            <a href="world.html"><i class="fa-solid fa-earth-americas"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
