@@ -1,0 +1,15 @@
+/* Custom styles to enhance Bootstrap */
+body {
+    background-color: #f8f9fa;
+}
+.question-paper {
+    transition: all 0.2s ease-in-out;
+}
+.question-paper:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.question-part {
+    border-left: 2px solid #007bff;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}

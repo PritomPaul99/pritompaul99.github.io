@@ -1,0 +1,95 @@
+{
+  "Nursery": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false }
+  ],
+  "Class 1": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false }
+  ],
+  "Class 2": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false }
+  ],
+  "Class 3": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false },
+    { "name": "Bangladesh and Global Studies", "special": false },
+    { "name": "General Science", "special": false },
+    { "name": "Islamic Studies", "special": false }
+  ],
+  "Class 4": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false },
+    { "name": "Bangladesh and Global Studies", "special": false },
+    { "name": "General Science", "special": false },
+    { "name": "Islamic Studies", "special": false },
+    { "name": "Hindu Religion Studies", "special": false }
+  ],
+  "Class 5": [
+    { "name": "Bengali", "special": false },
+    { "name": "English", "special": false },
+    { "name": "Mathematics", "special": false },
+    { "name": "Co-curricular", "special": false },
+    { "name": "Bangladesh and Global Studies", "special": false },
+    { "name": "General Science", "special": false },
+    { "name": "Islamic Studies", "special": false }
+  ],
+  "Class 6": [{ "name": "ICT", "special": false }],
+  "Class 9": [
+    { "name": "Bengali 1st Paper", "special": false },
+    { "name": "Bengali 2nd Paper", "special": false },
+    { "name": "English 1st Paper", "special": false },
+    { "name": "English 2nd Paper", "special": false },
+    {
+      "name": "Information and Communication Technology (ICT)",
+      "special": false
+    },
+    { "name": "Agricultural Studies", "special": false },
+    { "name": "Physics", "special": true },
+    { "name": "Chemistry", "special": true },
+    { "name": "Biology", "special": false },
+    { "name": "Science", "special": false },
+    { "name": "General Mathematics", "special": true },
+    { "name": "Freelancing and Banking", "special": false },
+    { "name": "Business Entrepreneurship", "special": false },
+    { "name": "Civics and Citizenship", "special": false },
+    { "name": "Hindu Religion", "special": false },
+    { "name": "Islamic Studies", "special": false },
+    { "name": "Higher Mathematics", "special": true },
+    { "name": "History of Bangladesh", "special": false }
+  ],
+  "Class 10": [
+    { "name": "Bengali 1st Paper", "special": false },
+    { "name": "Bengali 2nd Paper", "special": false },
+    { "name": "English 1st Paper", "special": false },
+    { "name": "English 2nd Paper", "special": false },
+    {
+      "name": "Information and Communication Technology (ICT)",
+      "special": false
+    },
+    { "name": "Agricultural Studies", "special": false },
+    { "name": "Physics", "special": true },
+    { "name": "Chemistry", "special": true },
+    { "name": "Biology", "special": false },
+    { "name": "Science", "special": false },
+    { "name": "General Mathematics", "special": true },
+    { "name": "Freelancing and Banking", "special": false },
+    { "name": "Business Entrepreneurship", "special": false },
+    { "name": "Civics and Citizenship", "special": false },
+    { "name": "Geography and Environment", "special": false },
+    { "name": "Hindu Religion", "special": false },
+    { "name": "Islamic Studies", "special": false },
+    { "name": "Higher Mathematics", "special": true }
+  ]
+}
